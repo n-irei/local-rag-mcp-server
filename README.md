@@ -1,7 +1,10 @@
 # local-rag-mcp-server
 
-完全オフラインで動作するローカル RAG MCP サーバーです。
+RAG処理・LLM推論をローカル完結させた MCP サーバーです。
 ChromaDB + Ollama（nomic-embed-text / qwen3.5:9b）を使い、PDF・txt・md ファイルを登録して質問に回答します。
+
+> **注意：** Claude Desktop 経由で使用する場合、ユーザーの質問と RAG 検索結果が Anthropic API に送信されます。
+> 機密情報を扱う場合は Open WebUI + Ollama による完全オフライン構成を推奨します。
 
 ## 構成
 
